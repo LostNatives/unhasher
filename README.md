@@ -18,4 +18,4 @@ Supported agorithms: MD5, SHA1, SHA256, SHA512, MySQL, MSSQL, NTLM, LM, bcrypt, 
 
 ###Examples:
 `unhasher.jar -h 098f6bcd4621d373cade4e832627b4f6 -p test`
-`unhasher.jar -h 098f6bcd4621d373cade4e832627b4f6 -w wordlist.txt -s test@test.com;tester -i 0-5000 -a SHA256`
+`unhasher.jar -h 098f6bcd4621d373cade4e832627b4f6 -w wordlist.txt -s test@test.com;tester -i 0-5000`
