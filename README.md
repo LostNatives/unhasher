@@ -6,7 +6,12 @@ Supports different mutations:
 * hash(pass)
 * hash(pass.salt)
 * hash(salt.pass)
-* hash(salt.pass.salt)
+* hash(salt1.pass.salt2)
+* hash(salt2.pass.salt1)
+* hash(salt2.salt1.pass)
+* hash(salt1.salt2.pass)
+* hash(pass.salt1.salt2)
+* hash(pass.salt2.salt1)
 
 ##Instructions:
 
@@ -25,4 +30,4 @@ Supported agorithms: MD5, SHA1, SHA256, SHA512, MySQL, MSSQL, NTLM, LM, bcrypt, 
 
 ###Examples:
 `java -jar unhasher.jar -h 098f6bcd4621d373cade4e832627b4f6 -p test`
-`java -jar unhasher.jar -h 098f6bcd4621d373cade4e832627b4f6 -w wordlist.txt -s test@test.com;tester -i 0-5000`
+`java -jar unhasher.jar -h 2a835530e9302131af7b3a11fc4b4f9d -w wordlist.txt -s test@test.com;tester -i 0-5000`
