@@ -2,15 +2,21 @@
 
 Unhasher helps you identify which hashing algorithm was used.
 
+Supports different mutations:
+hash(pass)
+hash(pass.salt)
+hash(salt.pass)
+hash(salt.pass.salt)
+
 ##Instructions:
 
 ###Usage:
-unhasher.jar -h HASH (-p PASSWORD | -w WORDLIST) [OPTIONS]
+unhasher.jar -h HASH (-p PASSWORD | -w WORDLIST) [OPTIONAL_PARAMS]
 
 * -h    Hash in any supported format.
 * -p    Password.
 * -w    Path to a wordlist file containing possible passwords separated by newline.
-* -s    OPTIONAL: One or more salts, separated by ";".
+* -s    OPTIONAL: One or two salts, separated by ";".
 * -i    OPTIONAL: Hash function iteration range, try 0-500 by default.
 * -a    OPTIONAL: Specify algorithm, same notation as below.
 * -x    OPTIONAL: Hash is in hex format.
@@ -18,5 +24,5 @@ unhasher.jar -h HASH (-p PASSWORD | -w WORDLIST) [OPTIONS]
 Supported agorithms: MD5, SHA1, SHA256, SHA512, MySQL, MSSQL, NTLM, LM, bcrypt, DES
 
 ###Examples:
-`unhasher.jar -h 098f6bcd4621d373cade4e832627b4f6 -p test`
-`unhasher.jar -h 098f6bcd4621d373cade4e832627b4f6 -w wordlist.txt -s test@test.com;tester -i 0-5000`
+`java -jar unhasher.jar -h 098f6bcd4621d373cade4e832627b4f6 -p test`
+`java -jar unhasher.jar -h 098f6bcd4621d373cade4e832627b4f6 -w wordlist.txt -s test@test.com;tester -i 0-5000`
