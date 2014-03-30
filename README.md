@@ -4,6 +4,7 @@ Unhasher helps you identify which hashing algorithm was used.
 
 ##Instructions:
 
+###Usage:
 unhasher.jar -h HASH (-p PASSWORD | -w WORDLIST) [OPTIONS]
 
 * -h    Hash in any supported format.
