@@ -1,9 +1,8 @@
-unhasher
-========
+#unhasher
 
 Unhasher helps you identify which hashing algorithm was used.
 
-Instructions:
+##Instructions:
 
 unhasher.jar -h <hash> (-p <password> | -w <wordlist>) [OPTIONS]
 
@@ -17,8 +16,6 @@ unhasher.jar -h <hash> (-p <password> | -w <wordlist>) [OPTIONS]
 
 Supported agorithms: MD5, SHA1, SHA256, SHA512, MySQL, MSSQL, NTLM, LM, bcrypt, DES
 
-Examples:
-'''
-unhasher.jar -h 098f6bcd4621d373cade4e832627b4f6 -p test
-unhasher.jar -h 098f6bcd4621d373cade4e832627b4f6 -w wordlist.txt -s test@test.com;tester -i 0-5000 -a SHA256
-'''
+###Examples:
+`unhasher.jar -h 098f6bcd4621d373cade4e832627b4f6 -p test`
+`unhasher.jar -h 098f6bcd4621d373cade4e832627b4f6 -w wordlist.txt -s test@test.com;tester -i 0-5000 -a SHA256`
