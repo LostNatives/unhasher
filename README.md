@@ -3,10 +3,10 @@
 Unhasher helps you identify which hashing algorithm was used.
 
 Supports different mutations:
-hash(pass)
-hash(pass.salt)
-hash(salt.pass)
-hash(salt.pass.salt)
+* hash(pass)
+* hash(pass.salt)
+* hash(salt.pass)
+* hash(salt.pass.salt)
 
 ##Instructions:
 
