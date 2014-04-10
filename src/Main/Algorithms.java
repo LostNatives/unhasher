@@ -3,15 +3,24 @@ package Main;
 
 import java.security.MessageDigest;
 import java.util.ArrayList;
+<<<<<<< HEAD
 import java.util.Formatter;
 import java.util.List;
 
+=======
+import java.util.List;
+
+
+>>>>>>> 2d4292fcb1e8eacabdea66915b6720f0b4a81be9
 abstract class Algorithms 
 {
     private static List<Algorithms> algorithms;
     
+<<<<<<< HEAD
     private static int processed_iterations = 0;
     
+=======
+>>>>>>> 2d4292fcb1e8eacabdea66915b6720f0b4a81be9
     //  Name of an algorithm
     private String name;
     
@@ -49,14 +58,18 @@ abstract class Algorithms
                         sb.append(Integer.toHexString((array[i] & 0xFF) | 0x100).substring(1,3));
                     }
                     
+<<<<<<< HEAD
                     processed_iterations++;
                     
+=======
+>>>>>>> 2d4292fcb1e8eacabdea66915b6720f0b4a81be9
                     return sb.toString();
                 } 
                 catch (java.security.NoSuchAlgorithmException e) { return "MD5 not supported!"; }
             }
         };
         
+<<<<<<< HEAD
         //  SHA1
         Algorithms sha1 = new Algorithms("SHA1")
         {
@@ -77,6 +90,9 @@ abstract class Algorithms
                 return sha1;
             }
         };
+=======
+        
+>>>>>>> 2d4292fcb1e8eacabdea66915b6720f0b4a81be9
     }
     
     public String getName()
@@ -84,15 +100,19 @@ abstract class Algorithms
         return name;
     }
     
+<<<<<<< HEAD
     public static int getProcessedIterations()
     {
         return processed_iterations;
     }
     
+=======
+>>>>>>> 2d4292fcb1e8eacabdea66915b6720f0b4a81be9
     public static List<Algorithms> getAlgorithms()
     {
         return algorithms;
     }
+<<<<<<< HEAD
     
     
     
@@ -107,4 +127,6 @@ abstract class Algorithms
         formatter.close();
         return result;
     }
+=======
+>>>>>>> 2d4292fcb1e8eacabdea66915b6720f0b4a81be9
 }
