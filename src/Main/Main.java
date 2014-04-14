@@ -1,7 +1,6 @@
 
 package Main;
 
-<<<<<<< HEAD
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -17,17 +16,6 @@ public class Main
         
         //  Start console service
         ArgumentsService as = new ArgumentsService(bla);
-=======
-public class Main 
-{
-    public static void main(String[] args) 
-    {
-        //  Initialize algorithms
-        Algorithms.initialize();
-        
-        //  Start console service
-        ArgumentsService as = new ArgumentsService(args);
->>>>>>> 2d4292fcb1e8eacabdea66915b6720f0b4a81be9
         
     }
 }
